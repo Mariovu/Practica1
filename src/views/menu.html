@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Desafio Oracle </title>
+    <link rel="stylesheet" href="../styles/menu.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="header">
+        <div class="img-container">
+            <img src="../images/Logo.png">
+        </div>
+        <h1>Desafio Oracle</h1>
+    </div>
+    <div class="container-body">
+        <div class="container-encriptado">
+            <p class="negritas">Escriba el texto a encriptar</p>
+            <input id="texto" type="text" placeholder=" Ingrese el texto aqui"> 
+            <p class="info-text"><i class='bx bxs-info-circle bx-sm'></i>Solo letras minusculas y sin acentos</p>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+
+        <div class="container-desencriptado">
+            <div class="img-container">
+                <img class="img-notfound" id="img-notfound" src="../images/box-design.svg">
+            </div>
+            <p class="negritas" id="texto-resultado">Ningun mensaje fue encontrado</p>
+            <p id="texto-aviso">Ingrese el texto que desees encriptar o desencriptar</p>
+            <button onclick="copiar()" id="btn-copy" hidden ><i class='bx bx-copy bx-md'></i></button>
+        </div>
+    </div>
+
+    <script src="../functions/main.js"></script>
+</body>
+
+</html>
